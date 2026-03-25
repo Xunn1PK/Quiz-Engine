@@ -51,6 +51,7 @@
   },
   "name":"Quiz Engine",
   "resources":[
+    {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"UI","path":"objects/UI/UI.yy",},},
