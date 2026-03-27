@@ -1,0 +1,1 @@
+question = data[global.question].Question;

@@ -75,6 +75,7 @@
     {"id":{"name":"oQuizUI","path":"objects/oQuizUI/oQuizUI.yy",},},
     {"id":{"name":"UI","path":"objects/UI/UI.yy",},},
     {"id":{"name":"rLoad","path":"rooms/rLoad/rLoad.yy",},},
+    {"id":{"name":"rQuiz","path":"rooms/rQuiz/rQuiz.yy",},},
     {"id":{"name":"__Configuration__","path":"scripts/__Configuration__/__Configuration__.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
     {"id":{"name":"__scribble_class_event","path":"scripts/__scribble_class_event/__scribble_class_event.yy",},},
@@ -399,6 +400,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rLoad","path":"rooms/rLoad/rLoad.yy",},},
+    {"roomId":{"name":"rQuiz","path":"rooms/rQuiz/rQuiz.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
