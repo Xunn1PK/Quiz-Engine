@@ -48,7 +48,9 @@
     {"$GMFolder":"","%Name":"Curves","folderPath":"folders/TweenGMX/User/Curves.yy","name":"Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"data.json","CopyToMask":-1,"filePath":"datafiles/Data","name":"data.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -59,6 +61,7 @@
     {"id":{"name":"EaseFastToSlow","path":"animcurves/EaseFastToSlow/EaseFastToSlow.yy",},},
     {"id":{"name":"EaseHeartbeat","path":"animcurves/EaseHeartbeat/EaseHeartbeat.yy",},},
     {"id":{"name":"EaseMidSlow","path":"animcurves/EaseMidSlow/EaseMidSlow.yy",},},
+    {"id":{"name":"fnt_editor","path":"fonts/fnt_editor/fnt_editor.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"TGMX_Documentation","path":"notes/TGMX_Documentation/TGMX_Documentation.yy",},},
@@ -66,6 +69,7 @@
     {"id":{"name":"TGMX_Update_Log","path":"notes/TGMX_Update_Log/TGMX_Update_Log.yy",},},
     {"id":{"name":"o_SharedTweener","path":"objects/o_SharedTweener/o_SharedTweener.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
+    {"id":{"name":"oQuizUI","path":"objects/oQuizUI/oQuizUI.yy",},},
     {"id":{"name":"UI","path":"objects/UI/UI.yy",},},
     {"id":{"name":"rLoad","path":"rooms/rLoad/rLoad.yy",},},
     {"id":{"name":"__Configuration__","path":"scripts/__Configuration__/__Configuration__.yy",},},
