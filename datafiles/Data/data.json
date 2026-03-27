@@ -2,27 +2,23 @@
     {
         "Question": {
             "str": "PLACEHOLDER_QUESTION_1",
-            "x": 640,
-            "y": 192
         }
         "Answer": [
             {
+                "str": "ANSWER_0",
+                "correct": 1,
+            },
+            {
                 "str": "ANSWER_1",
-                "isRight": true
-                "x": 640,
-                "y": 192
+                "correct": 0,
             },
             {
                 "str": "ANSWER_2",
-                "isRight": false
+                "correct": 0,
             },
             {
                 "str": "ANSWER_3",
-                "isRight": false
-            },
-            {
-                "str": "ANSWER_4",
-                "isRight": false
+                "correct": 0,
             }
         ]
     }
