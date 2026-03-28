@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"stringToArray",
+  "%Name":"stringArrayConvertation",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"stringToArray",
+  "name":"stringArrayConvertation",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

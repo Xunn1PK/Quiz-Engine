@@ -216,7 +216,7 @@
     {"id":{"name":"string_length_scribble","path":"scripts/string_length_scribble/string_length_scribble.yy",},},
     {"id":{"name":"string_width_scribble_ext","path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},},
     {"id":{"name":"string_width_scribble","path":"scripts/string_width_scribble/string_width_scribble.yy",},},
-    {"id":{"name":"stringToArray","path":"scripts/stringToArray/stringToArray.yy",},},
+    {"id":{"name":"stringArrayConvertation","path":"scripts/stringArrayConvertation/stringArrayConvertation.yy",},},
     {"id":{"name":"TGMX_0_MainTweens","path":"scripts/TGMX_0_MainTweens/TGMX_0_MainTweens.yy",},},
     {"id":{"name":"TGMX_1_EasyTweens","path":"scripts/TGMX_1_EasyTweens/TGMX_1_EasyTweens.yy",},},
     {"id":{"name":"TGMX_2_EaseFunctions","path":"scripts/TGMX_2_EaseFunctions/TGMX_2_EaseFunctions.yy",},},
