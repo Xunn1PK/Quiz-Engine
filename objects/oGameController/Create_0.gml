@@ -1,5 +1,7 @@
-global.data = json_load("data.json");
-global.layout = json_load("Layouts/default.json");
-global.question = 1;
+global.data = json_load("Data/data.json");
+global.layout = json_load("Data/Layouts/default.json");
+global.question = 0;
 var panel = new UIPanel("PanelQuiz", 0, 0, 1280, 720, undefined);
-panel.setResizable(false).setMovable(false).setVisible(false);
+panel.setResizable(false).setMovable(false);
+
+scribble_font_set_default("fMain");

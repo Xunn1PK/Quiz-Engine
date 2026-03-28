@@ -54,7 +54,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"Quiz Engine",
   "resources":[
@@ -122,8 +122,8 @@
     {"id":{"name":"__scribble_tick","path":"scripts/__scribble_tick/__scribble_tick.yy",},},
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
-    {"id":{"name":"scr_json","path":"scripts/scr_json/scr_json.yy",},},
-    {"id":{"name":"scr_mouse","path":"scripts/scr_mouse/scr_mouse.yy",},},
+    {"id":{"name":"json","path":"scripts/json/json.yy",},},
+    {"id":{"name":"mouse","path":"scripts/mouse/mouse.yy",},},
     {"id":{"name":"scr_UI_Button","path":"scripts/scr_UI_Button/scr_UI_Button.yy",},},
     {"id":{"name":"scr_UI_Canvas","path":"scripts/scr_UI_Canvas/scr_UI_Canvas.yy",},},
     {"id":{"name":"scr_UI_Checkbox","path":"scripts/scr_UI_Checkbox/scr_UI_Checkbox.yy",},},

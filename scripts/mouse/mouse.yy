@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_mouse",
+  "%Name":"mouse",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_mouse",
+  "name":"mouse",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
