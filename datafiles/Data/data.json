@@ -1,8 +1,6 @@
 [
     {
-        "Question": {
-            "str": "PLACEHOLDER_QUESTION_1",
-        },
+        "Question": "PLACEHOLDER_QUESTION_1",
         "Answer": [
             {
                 "str": "ANSWER_0",

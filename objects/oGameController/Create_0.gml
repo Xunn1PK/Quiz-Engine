@@ -5,3 +5,5 @@ var panel = new UIPanel("PanelQuiz", 0, 0, 1280, 720, undefined);
 panel.setResizable(false).setMovable(false);
 
 scribble_font_set_default("fMain");
+scribble_font_force_bilinear_filtering("fMain", false);
+scribble_font_force_bilinear_filtering("fEditor", false);
