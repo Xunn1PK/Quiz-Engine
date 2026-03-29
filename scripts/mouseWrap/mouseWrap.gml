@@ -1,7 +1,7 @@
 enum MOUSE {
     HOLD,
     PRESS,
-    RELEASE,
+    RELEASE
 }
 
 function mouse(button, type, hover = true){
