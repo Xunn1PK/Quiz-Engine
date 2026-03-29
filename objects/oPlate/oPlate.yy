@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oQuizPanel",
+  "%Name":"oPlate",
   "eventList":[],
   "managed":true,
-  "name":"oQuizPanel",
+  "name":"oPlate",
   "overriddenProperties":[],
   "parent":{
     "name":"Props",

@@ -35,12 +35,16 @@
     ],
     "Object": [
         {
-            "object": "oQuizPanel",
+            "object": "oPlate",
             "x": 0,
             "y": 400,
             "x_scale": 20,
             "y_scale": 5,
-            "color": [255, 255, 255]
+            "color": [255, 255, 255],
+            "depth": 100,
+            "alpha": 1,
+            "frame": 0,
+            "animation_speed": 1
         }
     ]
 }
