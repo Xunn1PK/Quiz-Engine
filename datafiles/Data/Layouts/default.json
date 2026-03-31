@@ -44,7 +44,8 @@
             "depth": 100,
             "alpha": 1,
             "frame": 0,
-            "animation_speed": 1
+            "animation_speed": 1,
+            "creation_codeID": -1
         }
     ]
 }

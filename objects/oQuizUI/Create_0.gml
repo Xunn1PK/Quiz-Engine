@@ -10,7 +10,7 @@ for (var i = 0; i < array_length(data.Answer); i++){
 }
 for (var i = 0; i < array_length(objects); i++){
     var obj = objects[i];
-    instance_create_depth(obj.x, obj.y, obj.depth, asset_get_index(obj.object), {
+    var inst = instance_create_depth(obj.x, obj.y, obj.depth, asset_get_index(obj.object), {
         "image_xscale": obj.x_scale,
         "image_yscale": obj.y_scale,
         "image_blend": make_colour_rgb(obj.color[0], obj.color[1], obj.color[2]),
@@ -18,4 +18,7 @@ for (var i = 0; i < array_length(objects); i++){
         "image_index": obj.frame,
         "image_speed": obj.animation_speed
     });
+    if (obj.creation_codeID != -1){
+        Quiz.executeCreationCode(inst, obj.creation_codeID);
+    }
 }
