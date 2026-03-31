@@ -15,8 +15,7 @@ executeCreationCode = function(inst, id) {
 }
 
 
-answerButton = {
-    "Press": function() {
+answerButtonPress = function() {
         with (oQuizButton) {
             isPressed = true;
             image_index = correct ? 3 : 4;
