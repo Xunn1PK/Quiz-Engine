@@ -1,6 +1,6 @@
-var color = c_black;
+var col = "c_black";
 if (isPressed){
-    color = correct ? c_lime : c_red;
+    col = correct ? "c_lime" : "c_red";
 }
 draw_self();
-scribble(str).blend(color, 1).draw(x, y);
+scribble($"[{col}]{str}").draw(x, y);
