@@ -3,7 +3,7 @@ global.layout = json_load("Data/Layouts/default.json");
 global.question = 0;
 global.creationCode = [function(){return 0}];
 global.options = {
-    "nextQuestionDelay": 1.5
+    "nextQuestionDelay": 3
 }
 
 scribble_font_set_default("fMain");

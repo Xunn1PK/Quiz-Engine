@@ -5,7 +5,8 @@ for (var i = 0; i < array_length(data.Answer); i++){
     instance_create_depth(answer[i].x, answer[i].y, 0, oQuizButton, {
         "image_xscale": answer[i].x_scale,
         "image_yscale": answer[i].y_scale,
-        "image_blend": make_colour_rgb(answer[i].color[0], answer[i].color[1], answer[i].color[2])
+        "image_blend": make_colour_rgb(answer[i].color[0], answer[i].color[1], answer[i].color[2]),
+        "ButtonID": i
     });
 }
 for (var i = 0; i < array_length(objects); i++){
