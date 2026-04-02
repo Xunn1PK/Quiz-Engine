@@ -1,6 +1,7 @@
-var col = "c_black";
+var textColor = global.layout.Answer.textColor;
+var col = textColor.normal;
 if (isPressed){
-    col = correct ? "c_lime" : "c_red";
+    col = correct ? textColor.correct : textColor.incorrect;
 }
 draw_self();
 scribble($"[{col}]{str}").draw(x, y);

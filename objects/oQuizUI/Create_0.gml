@@ -2,10 +2,10 @@ var answer = global.layout.Answer;
 var objects = global.layout.Object;
 var data = global.data[global.question];
 for (var i = 0; i < array_length(data.Answer); i++){
-    instance_create_depth(answer[i].x, answer[i].y, 0, oQuizButton, {
-        "image_xscale": answer[i].x_scale,
-        "image_yscale": answer[i].y_scale,
-        "image_blend": make_colour_rgb(answer[i].color[0], answer[i].color[1], answer[i].color[2]),
+    instance_create_depth(answer.pos[i].x, answer.pos[i].y, 0, oQuizButton, {
+        "image_xscale": answer.xscale,
+        "image_yscale": answer.yscale,
+        "image_blend": make_colour_rgb(answer.color[i][0], answer.color[i][1], answer.color[i][2]),
         "ButtonID": i
     });
 }
