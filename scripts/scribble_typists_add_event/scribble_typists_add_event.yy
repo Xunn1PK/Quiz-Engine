@@ -6,7 +6,7 @@
   "name":"scribble_typists_add_event",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/gooey/Dependencies/Scribble/Miscellaneous.yy",
+    "path":"folders/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

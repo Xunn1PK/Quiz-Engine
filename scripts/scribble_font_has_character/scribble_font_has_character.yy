@@ -6,7 +6,7 @@
   "name":"scribble_font_has_character",
   "parent":{
     "name":"Fonts",
-    "path":"folders/gooey/Dependencies/Scribble/Fonts.yy",
+    "path":"folders/Scribble/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
