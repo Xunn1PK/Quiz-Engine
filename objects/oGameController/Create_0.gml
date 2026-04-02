@@ -9,3 +9,5 @@ global.options = {
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
 scribble_font_force_bilinear_filtering("fEditor", false);
+
+#macro Quiz new _quizMethods()

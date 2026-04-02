@@ -20,5 +20,6 @@ for (var i = 0; i < array_length(objects); i++) {
         "image_speed": obj.image_speed
     });
     if (obj.creation_code != -1) {
+        Quiz.__executeCreationCode(inst, obj.creation_code);
     }
 }
