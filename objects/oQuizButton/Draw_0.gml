@@ -1,4 +1,4 @@
-var textColor = global.layout.Answer.textColor;
+var textColor = global.layout.Answer.text_color;
 var col = textColor.normal;
 if (isPressed){
     col = correct ? textColor.correct : textColor.incorrect;

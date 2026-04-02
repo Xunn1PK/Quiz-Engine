@@ -12,14 +12,14 @@ for (var i = 0; i < array_length(data.Answer); i++){
 for (var i = 0; i < array_length(objects); i++){
     var obj = objects[i];
     var inst = instance_create_depth(obj.x, obj.y, obj.depth, asset_get_index(obj.object), {
-        "image_xscale": obj.x_scale,
-        "image_yscale": obj.y_scale,
-        "image_blend": make_colour_rgb(obj.color[0], obj.color[1], obj.color[2]),
+        "image_xscale": obj.xscale,
+        "image_yscale": obj.yscale,
+        "image_blend": make_colour_rgb(obj.blend[0], obj.blend[1], obj.blend[2]),
         "image_alpha": obj.alpha,
-        "image_index": obj.frame,
-        "image_speed": obj.animation_speed
+        "image_index": obj.image_index,
+        "image_speed": obj.image_speed
     });
-    if (obj.creation_codeID != -1){
-        Quiz.executeCreationCode(inst, obj.creation_codeID);
+    if (obj.creation_code != -1){
+        Quiz.executeCreationCode(inst, obj.creation_code);
     }
 }
