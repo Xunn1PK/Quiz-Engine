@@ -1,7 +1,7 @@
 var answer = global.layout.Answer;
 var objects = global.layout.Object;
 var data = global.data[global.question];
-for (var i = 0; i < array_length(data.Answer); i++){
+for (var i = 0; i < array_length(data.Answer); i++) {
     instance_create_depth(answer.pos[i].x, answer.pos[i].y, 0, oQuizButton, {
         "image_xscale": answer.xscale,
         "image_yscale": answer.yscale,
@@ -9,7 +9,7 @@ for (var i = 0; i < array_length(data.Answer); i++){
         "ButtonID": i
     });
 }
-for (var i = 0; i < array_length(objects); i++){
+for (var i = 0; i < array_length(objects); i++) {
     var obj = objects[i];
     var inst = instance_create_depth(obj.x, obj.y, obj.depth, asset_get_index(obj.object), {
         "image_xscale": obj.xscale,
@@ -19,7 +19,6 @@ for (var i = 0; i < array_length(objects); i++){
         "image_index": obj.image_index,
         "image_speed": obj.image_speed
     });
-    if (obj.creation_code != -1){
-        Quiz.executeCreationCode(inst, obj.creation_code);
+    if (obj.creation_code != -1) {
     }
 }
