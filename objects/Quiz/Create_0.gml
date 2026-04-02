@@ -3,7 +3,7 @@ nextQuestion = function() {
         global.question++;
     } else {
         //It will be added later
-        show_message("Not implemented yet! :)");
+        showMsg("Not implemented yet! :)");
     }
 }
 
