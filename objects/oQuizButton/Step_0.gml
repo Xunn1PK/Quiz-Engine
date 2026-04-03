@@ -1,11 +1,11 @@
 if (!isPressed) {
     if (mouse(mb_left, MOUSE.RELEASE)) {
-        Quiz.__answerButtonPress();
+        callback.onMouseReleased();
     } else if (mouse(mb_left, MOUSE.HOLD)) {
-        image_index = 2;
+        callback.onMouseHold();
     } else if (mouse_hover()) {
-        image_index = 1;
+        callback.onMouseHover();
     } else {
-        image_index = 0;
+        callback.normal();
     }
 }
