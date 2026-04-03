@@ -14,10 +14,42 @@ function _quizMethods() constructor {
             global.creationCode[id]();
         }
     }
+    
+    static __resetTimer = function() {
+        with (oTimer){
+            filledScale = image_xscale;
+            timer = global.timer;
+            TweenFire(self, Ease, 0, true, 0, global.timer, "timer", global.timer, 0);
+        }
+    }
     #endregion
     
     #region System methods. In 99.9% cases you do NOT need to touch it
-        
+    static _layoutCreateAnswer = function(id){
+        var answer = global.layout.Answer;
+        instance_create_depth(answer.pos[id].x, answer.pos[id].y, 0, oQuizButton, {
+            "image_xscale": answer.xscale,
+            "image_yscale": answer.yscale,
+            "image_blend": make_colour_rgb(answer.color[id][0], answer.color[id][1], answer.color[id][2]),
+            "ButtonID": id
+        });
+    }
+    
+    static _layoutCreateObject = function(id){
+        var obj = global.layout.Object[id];
+        var inst = instance_create_depth(obj.x, obj.y, obj.depth, asset_get_index(obj.object), {
+            "image_xscale": obj.xscale,
+            "image_yscale": obj.yscale,
+            "image_blend": make_colour_rgb(obj.blend[0], obj.blend[1], obj.blend[2]),
+            "image_alpha": obj.alpha,
+            "image_index": obj.image_index,
+            "image_speed": obj.image_speed
+        });
+        if (obj.creation_code != -1) {
+            __executeCreationCode(inst, obj.creation_code);
+        }
+    }
+    
     static _answerButtonPress = function() {
         with (oQuizButton) {
             isPressed = true;
@@ -25,6 +57,7 @@ function _quizMethods() constructor {
         }
         call_later(global.options.nextQuestionDelay, time_source_units_seconds, function() {
             __nextQuestion();
+            __resetTimer();
             with(oQuizButton) { 
                 isPressed = false;
                 image_index = 0;
@@ -37,4 +70,5 @@ function _quizMethods() constructor {
     static getButtonsPressed = function() {
         return oQuizButton.isPressed;
     }
+    #endregion
 }
