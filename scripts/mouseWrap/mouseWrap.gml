@@ -6,7 +6,7 @@ enum MOUSE {
 
 function mouse(button, type, hover = true){
     var m;
-    var m_meet = position_meeting(mouse_x, mouse_y, self);
+    var isHover = mouse_hover();
     switch (type){
         case MOUSE.HOLD:
             m = mouse_check_button(button);
@@ -22,7 +22,7 @@ function mouse(button, type, hover = true){
         break;
     }
     if (hover){
-        m *= m_meet;
+        m *= isHover;
     }
     return m;
 }
