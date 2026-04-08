@@ -18,7 +18,8 @@
                 "str": "ANSWER_3",
                 "correct": 0,
             }
-        ]
+        ],
+        "Time": 3
     },
     {
         "Question": "PLACEHOLDER_QUESTION_2",
@@ -39,6 +40,7 @@
                 "str": "ANSWER_3",
                 "correct": 0,
             }
-        ]
+        ],
+        "Time": 30.0
     }
 ]

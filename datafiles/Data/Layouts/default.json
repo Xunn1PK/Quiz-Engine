@@ -4,6 +4,7 @@
         "y": 200
     },
     "Answer": {
+        "count": 4,
         "xscale": 4.75,
         "yscale": 1.75,
         "text_color": {
@@ -44,6 +45,19 @@
             "depth": 100,
             "xscale": 20,
             "yscale": 5,
+            "blend": [255, 255, 255],
+            "alpha": 1,
+            "image_index": 0,
+            "image_speed": 1,
+            "creation_code": -1
+        },
+        {
+            "object": "oTimer",
+            "x": 344,
+            "y": 16,
+            "depth": 100,
+            "xscale": 18.5,
+            "yscale": 1,
             "blend": [255, 255, 255],
             "alpha": 1,
             "image_index": 0,

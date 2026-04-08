@@ -17,14 +17,23 @@ function _quizMethods() constructor {
     
     static __resetTimer = function() {
         with (oTimer){
+            active = true;
             filledScale = image_xscale;
-            timer = global.timer;
-            TweenFire(self, Ease, 0, true, 0, global.timer, "timer", global.timer, 0);
         }
+        global.timer = global.data[global.question].Time;
     }
     #endregion
     
     #region System methods. In 99.9% cases you do NOT need to touch it
+    static _init = function(){
+        for (var i = 0; i < global.layout.Answer.count; i++) {
+            _layoutCreateAnswer(i);
+        }
+        for (var i = 0; i < array_length(global.layout.Object); i++) {
+            _layoutCreateObject(i);
+        }
+        __resetTimer();
+    }
     static _layoutCreateAnswer = function(id){
         var answer = global.layout.Answer;
         instance_create_depth(answer.pos[id].x, answer.pos[id].y, 0, oQuizButton, {
