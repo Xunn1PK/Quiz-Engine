@@ -4,19 +4,19 @@
         "Answer": [
             {
                 "str": "ANSWER_0",
-                "correct": 1,
+                "correct": 1
             },
             {
                 "str": "ANSWER_1",
-                "correct": 0,
+                "correct": 1
             },
             {
                 "str": "ANSWER_2",
-                "correct": 0,
+                "correct": 0
             },
             {
                 "str": "ANSWER_3",
-                "correct": 0,
+                "correct": 0
             }
         ],
         "Time": 3
@@ -26,19 +26,19 @@
         "Answer": [
             {
                 "str": "ANSWER_0",
-                "correct": 1,
+                "correct": 1
             },
             {
                 "str": "ANSWER_1",
-                "correct": 0,
+                "correct": 0
             },
             {
                 "str": "ANSWER_2",
-                "correct": 0,
+                "correct": 0
             },
             {
                 "str": "ANSWER_3",
-                "correct": 0,
+                "correct": 0
             }
         ],
         "Time": 30.0
