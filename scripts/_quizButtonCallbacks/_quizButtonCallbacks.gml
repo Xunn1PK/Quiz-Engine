@@ -10,6 +10,6 @@ function _quizButtonCallbacks() constructor {
         inst.image_index = 2;
     }
     onMouseReleased = function() {
-        Quiz.__answerButtonPress();
+        Quiz._answerButtonPress();
     }
 }
