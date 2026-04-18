@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"_quizButtonCallbacks",
+  "%Name":"_quizButtonMethods",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"_quizButtonCallbacks",
+  "name":"_quizButtonMethods",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

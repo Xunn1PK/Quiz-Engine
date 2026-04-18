@@ -1,11 +1,11 @@
 if (!isPressed) {
     if (mouse(mb_left, MOUSE.RELEASE)) {
-        callback.onMouseReleased();
+        methods.onMouseReleased();
     } else if (mouse(mb_left, MOUSE.HOLD)) {
-        callback.onMouseHold();
+        methods.onMouseHold();
     } else if (mouse_hover()) {
-        callback.onMouseHover();
+        methods.onMouseHover();
     } else {
-        callback.normal();
+        methods.onMouseHold();
     }
 }

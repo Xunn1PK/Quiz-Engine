@@ -1,4 +1,5 @@
-str = global.data[global.question].Answer[ButtonID].str;
-correct = global.data[global.question].Answer[ButtonID].correct;
+methods = new _quizButtonMethods();
+
+str = methods.getStr(ButtonID);
+correct = methods.isCorrect(ButtonID);
 isPressed = false;
-callback = new _quizButtonCallbacks();
