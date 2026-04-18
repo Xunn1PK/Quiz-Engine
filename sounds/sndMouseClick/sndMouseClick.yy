@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.065034,
+  "duration":2.043356,
   "exportDir":"",
   "name":"sndMouseClick",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndMouseClick.mp3",
+  "soundFile":"sndMouseClick.wav",
   "volume":1.0,
 }
