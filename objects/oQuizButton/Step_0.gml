@@ -6,6 +6,6 @@ if (!isPressed) {
     } else if (mouse_hover()) {
         methods.onMouseHover();
     } else {
-        methods.onMouseHold();
+        methods.callbackStatic();
     }
 }
