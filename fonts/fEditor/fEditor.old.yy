@@ -186,7 +186,7 @@
   "name":"fEditor",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Common/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

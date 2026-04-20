@@ -15,7 +15,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"gooey",
-    "path":"folders/gooey.yy",
+    "path":"folders/.Libraries/gooey.yy",
   },
   "parentObjectId":null,
   "persistent":true,

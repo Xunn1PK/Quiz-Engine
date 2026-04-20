@@ -15,7 +15,7 @@
   "name":"sndMouseClick",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "path":"folders/Quiz/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
