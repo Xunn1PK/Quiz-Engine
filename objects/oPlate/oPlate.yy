@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sQuizPanel",
-    "path":"sprites/sQuizPanel/sQuizPanel.yy",
+    "name":"sPanel",
+    "path":"sprites/sPanel/sPanel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

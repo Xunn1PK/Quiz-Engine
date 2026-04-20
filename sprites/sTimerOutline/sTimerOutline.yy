@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"QuizUI",
-    "path":"folders/Quiz/Sprites/UI/QuizUI.yy",
+    "name":"Sprites",
+    "path":"folders/Quiz/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

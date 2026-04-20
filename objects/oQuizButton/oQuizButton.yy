@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sQuizButton",
-    "path":"sprites/sQuizButton/sQuizButton.yy",
+    "name":"sButton",
+    "path":"sprites/sButton/sButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
