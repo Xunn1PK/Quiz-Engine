@@ -264,6 +264,7 @@
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"sEditorButton","path":"sprites/sEditorButton/sEditorButton.yy",},},
     {"id":{"name":"sEditorPanel","path":"sprites/sEditorPanel/sEditorPanel.yy",},},
+    {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
     {"id":{"name":"sPanel","path":"sprites/sPanel/sPanel.yy",},},
     {"id":{"name":"sTimer","path":"sprites/sTimer/sTimer.yy",},},
     {"id":{"name":"sTimerOutline","path":"sprites/sTimerOutline/sTimerOutline.yy",},},
