@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sQuizButton",
+  "%Name":"sButton",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":0,
@@ -25,7 +25,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"1c28424c-30cc-4857-950d-75f3a5459e46","blendMode":0,"displayName":"default","isLocked":false,"name":"1c28424c-30cc-4857-950d-75f3a5459e46","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sQuizButton",
+  "name":"sButton",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":10,
@@ -48,15 +48,15 @@
   },
   "origin":4,
   "parent":{
-    "name":"QuizUI",
-    "path":"folders/Quiz/Sprites/UI/QuizUI.yy",
+    "name":"Sprites",
+    "path":"folders/Common/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sQuizButton",
+    "%Name":"sButton",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -80,7 +80,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sQuizButton",
+    "name":"sButton",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -92,19 +92,19 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"63b6a07e-e4a3-4203-a177-91b20e3233a0","path":"sprites/sQuizButton/sQuizButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"63b6a07e-e4a3-4203-a177-91b20e3233a0","path":"sprites/sButton/sButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"85024485-294c-43af-b264-42c28dc72b22","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b3e70ded-f137-420b-a46c-2dbd7461490c","path":"sprites/sQuizButton/sQuizButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b3e70ded-f137-420b-a46c-2dbd7461490c","path":"sprites/sButton/sButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"96ded8e0-c4d5-4464-a01a-88631ab3d1b6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a9b0136-4315-46b7-b2a6-25df8c75a02e","path":"sprites/sQuizButton/sQuizButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a9b0136-4315-46b7-b2a6-25df8c75a02e","path":"sprites/sButton/sButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"92113e7c-561d-484e-adfb-6012dadab45a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9e1fed79-53bf-4171-9eb4-7847112a2945","path":"sprites/sQuizButton/sQuizButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9e1fed79-53bf-4171-9eb4-7847112a2945","path":"sprites/sButton/sButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f2f84507-2e52-4846-848b-bcf62d7190c1","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20151a19-3e55-4f54-9c17-cc31d3e74c6a","path":"sprites/sQuizButton/sQuizButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20151a19-3e55-4f54-9c17-cc31d3e74c6a","path":"sprites/sButton/sButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9dcff7e0-6ee7-4c8a-a73a-cadae77b9628","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -1,0 +1,2 @@
+scribble($"[fa_left][fa_bottom][alpha, 0.5]{global.version_num}").transform(0.75).draw(4, room_height - 4);
+scribble($"[fa_right][fa_bottom][alpha, 0.5]{global.version_name}").transform(0.75).draw(room_width - 4, room_height - 4);

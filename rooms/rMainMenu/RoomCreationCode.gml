@@ -1,0 +1,1 @@
+ui_get("main-menu").setVisible(true);
