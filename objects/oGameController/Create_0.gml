@@ -1,4 +1,7 @@
 #region Common
+global.version_num = "v0.1.0";
+global.version_name = "Beta 1";
+
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
 #endregion
