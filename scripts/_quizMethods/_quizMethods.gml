@@ -1,11 +1,10 @@
 function _quizMethods() constructor {
-    #region Private methods. Do NOT touch it
+    #region Private methods. Do NOT touch it outside of this constructor
     static __nextQuestion = function() {
         if (global.question < array_length(global.data) - 1) {
             global.question++;
         } else {
-            //It will be added later
-            showMsg("Not implemented yet! :)");
+            room_goto(rMainMenu);
         }
     }
     
