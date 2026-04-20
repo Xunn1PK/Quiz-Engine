@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oPlate",
-  "eventList":[],
+  "%Name":"oMainMenuController",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oPlate",
+  "name":"oMainMenuController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Props",
-    "path":"folders/Quiz/Objects/Props.yy",
+    "name":"MainMenu",
+    "path":"folders/MainMenu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sQuizPanel",
-    "path":"sprites/sQuizPanel/sQuizPanel.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

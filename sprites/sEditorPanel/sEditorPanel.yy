@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"EditorUI",
-    "path":"folders/Sprites/UI/EditorUI.yy",
+    "name":"Sprites",
+    "path":"folders/Editor/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

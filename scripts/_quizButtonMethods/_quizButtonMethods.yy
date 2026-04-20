@@ -6,7 +6,7 @@
   "name":"_quizButtonMethods",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "path":"folders/Quiz/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
