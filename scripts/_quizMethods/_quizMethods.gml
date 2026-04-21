@@ -5,6 +5,7 @@ function _quizMethods() constructor {
             global.question++;
         } else {
             room_goto(rMainMenu);
+            global.question = 0;
         }
     }
     
