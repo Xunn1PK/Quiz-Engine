@@ -13,6 +13,8 @@ function _quizMethods() constructor {
         with (inst) {
             if (is_method(global.creationCode[id])) {
                 global.creationCode[id]();
+            } else {
+                showMsg($"Error! Creation code {id} is not a method!");
             }
         }
     }
