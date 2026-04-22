@@ -1,11 +1,12 @@
 function _quizMethods() constructor {
-    #region Private methods. Do NOT touch it outside of this constructor
+    #region Private
     static __nextQuestion = function() {
         if (global.question < array_length(global.data) - 1) {
             global.question++;
         } else {
-            room_goto(rMainMenu);
-            global.question = 0;
+            Transition.Goto(rMainMenu, function() {
+                global.question = 0;
+            });
         }
     }
     
@@ -18,6 +19,7 @@ function _quizMethods() constructor {
             }
         }
     }
+    
     
     static __resetTimer = function() {
         with (oTimer) {
@@ -53,7 +55,10 @@ function _quizMethods() constructor {
     }
     #endregion
     
-    #region System methods. In 99.9% cases you do NOT need to touch it
+    
+    
+    
+    #region System
     static _init = function() {
         for (var i = 0; i < global.layout.Answer.count; i++) {
             __layoutCreateAnswer(i);
@@ -80,7 +85,10 @@ function _quizMethods() constructor {
     }
     #endregion
     
-    #region Public methods.
+    
+    
+    
+    #region Public
     static getButtonsPressed = function() {
         return oQuizButton.isPressed;
     }

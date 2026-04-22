@@ -4,8 +4,9 @@ var p = ui_get("main-menu");
 var b = new UIButton("main-menu-button-start", 0, 128, 182, 64, "[#000000]Start", sButton);
 b.setImageMouseover(1).setImageClick(2);
 b.setCallback(UI_EVENT.LEFT_RELEASE, function() {
-    room_goto(rQuiz);    
-    ui_get("main-menu").setVisible(false);
+    Transition.Goto(rQuiz, function() {
+        ui_get("main-menu").setVisible(false);
+    });
 });
 p.add(b);
 

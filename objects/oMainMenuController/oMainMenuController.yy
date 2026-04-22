@@ -9,8 +9,8 @@
   "name":"oMainMenuController",
   "overriddenProperties":[],
   "parent":{
-    "name":"MainMenu",
-    "path":"folders/MainMenu.yy",
+    "name":"Objects",
+    "path":"folders/MainMenu/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
