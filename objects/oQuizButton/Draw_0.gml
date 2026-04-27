@@ -4,4 +4,4 @@ if (isPressed) {
     col = correct ? textColor.correct : textColor.incorrect;
 }
 draw_self();
-scribble($"[{col}]{str}").draw(x, y);
+scribble($"[{col}][alpha, {image_alpha}]{str}").draw(x, y);

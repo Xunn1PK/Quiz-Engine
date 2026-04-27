@@ -3,9 +3,14 @@ function _quizMethods() constructor {
     static __nextQuestion = function() {
         if (global.question < array_length(global.data) - 1) {
             global.question++;
+            global.answersActive = false; 
+            
+            var q = global.layout.Question
+            oQuizUI.moveQuestion(q.start_x, q.start_y, q.move_time, EASING[q.easing]);
         } else {
             Transition.Goto(rMainMenu, function() {
                 global.question = 0;
+                array_delete(global.object, 0, array_length(global.object));
             });
         }
     }
@@ -52,6 +57,7 @@ function _quizMethods() constructor {
         if (obj.creation_code != -1) {
             __executeCreationCode(inst, obj.creation_code);
         }
+        array_push(global.object, obj);
     }
     #endregion
     
@@ -77,11 +83,15 @@ function _quizMethods() constructor {
         call_later(global.options.nextQuestionDelay, time_source_units_seconds, function() {
             __nextQuestion();
             __resetTimer();
-            with(oQuizButton) { 
-                isPressed = false;
-                image_index = 0;
-            }
+            global.answersActive = false;
         });
+    }
+    
+    static _answerButtonReset = function() {
+        with (oQuizButton) {
+            isPressed = false;
+            image_index = 0;
+        }
     }
     #endregion
     
