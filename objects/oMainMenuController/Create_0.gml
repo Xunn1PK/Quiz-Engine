@@ -1,11 +1,11 @@
-var p = ui_get("main-menu");
+var p = new UIPanel("main-menu", 0, 0, display_get_gui_width(), display_get_gui_height(), undefined, UI_RELATIVE_TO.TOP_LEFT);
 
 //Start button
 var b = new UIButton("main-menu-button-start", 0, 128, 182, 64, "[#000000]Start", sButton);
 b.setImageMouseover(1).setImageClick(2);
 b.setCallback(UI_EVENT.LEFT_RELEASE, function() {
     Transition.Goto(rQuiz, function() {
-        ui_get("main-menu").setVisible(false);
+        ui_get("main-menu").destroy();
     });
 });
 p.add(b);
