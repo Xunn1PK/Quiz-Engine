@@ -15,7 +15,7 @@
   "name":"sndMouseHover",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Quiz/Sounds.yy",
+    "path":"folders/Common/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

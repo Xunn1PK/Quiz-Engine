@@ -15,7 +15,7 @@
   "name":"musQuiz",
   "parent":{
     "name":"Music",
-    "path":"folders/Quiz/Music.yy",
+    "path":"folders/Common/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

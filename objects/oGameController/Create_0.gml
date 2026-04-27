@@ -15,6 +15,7 @@ global.question = 0;
 global.creationCode = [function(){return 0}];
 global.timer = 0;
 global.answersActive = false;
+global.playerAnswers = [];
 global.options = {
     nextQuestionDelay: 3,
     transitionFadeInLength: 0.25,

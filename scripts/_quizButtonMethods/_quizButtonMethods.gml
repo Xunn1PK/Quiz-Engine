@@ -50,6 +50,7 @@ function _quizButtonMethods() constructor {
         //Code to execute
         var snd = inst.correct ? Sounds.quiz.CorrectAnswer : Sounds.quiz.WrongAnswer;
         audio_play_sound(snd, 0, false);
+        array_push(global.playerAnswers, inst.ButtonID);
         
         //Danger zone (do NOT touch this!)
         Quiz._answerButtonPress();
