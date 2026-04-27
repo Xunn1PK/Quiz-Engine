@@ -1,6 +1,5 @@
-if (global.timer == -1) instance_destroy();
 filledScale = image_xscale; 
-active = true;
+active = false;
 
 timeXOffset = -8;
 timeYOffset = 16;

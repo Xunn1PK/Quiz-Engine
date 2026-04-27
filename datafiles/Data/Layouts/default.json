@@ -1,7 +1,11 @@
 {
     "Question": {
+        "start_x": 640,
+        "start_y": 360,
         "x": 640,
-        "y": 200
+        "y": 200,
+        "easing": 2,
+        "move_time": 0.5
     },
     "Answer": {
         "count": 4,

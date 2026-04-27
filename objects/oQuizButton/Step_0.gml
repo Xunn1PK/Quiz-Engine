@@ -1,4 +1,4 @@
-if (!isPressed) {
+if (!isPressed && global.answersActive) {
     if (mouse(mb_left, MOUSE.RELEASE)) {
         methods.onMouseReleased();
     } else if (mouse(mb_left, MOUSE.HOLD)) {

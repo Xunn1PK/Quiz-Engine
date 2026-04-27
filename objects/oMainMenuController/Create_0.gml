@@ -24,7 +24,7 @@ p.add(b);
 b = new UIButton("main-menu-button-exit", 256, 128, 182, 64, "[#000000]Exit", sButton);
 b.setImageMouseover(1).setImageClick(2);
 b.setCallback(UI_EVENT.LEFT_RELEASE, function() {
-    game_end();
+    Transition.Goto(room, game_end);
 });
 p.add(b);
 

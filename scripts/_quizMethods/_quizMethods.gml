@@ -3,9 +3,14 @@ function _quizMethods() constructor {
     static __nextQuestion = function() {
         if (global.question < array_length(global.data) - 1) {
             global.question++;
+            global.answersActive = false; 
+            
+            var q = global.layout.Question
+            oQuizUI.moveQuestion(q.start_x, q.start_y, q.move_time, EASING[q.easing]);
         } else {
             Transition.Goto(rMainMenu, function() {
                 global.question = 0;
+                audio_stop_sound(Music.quiz.Main);
             });
         }
     }
@@ -67,6 +72,8 @@ function _quizMethods() constructor {
             __layoutCreateObject(i);
         }
         __resetTimer();
+        
+        audio_play_sound(Music.quiz.Main, 1, true);
     }
     
     static _answerButtonPress = function() {
@@ -77,11 +84,15 @@ function _quizMethods() constructor {
         call_later(global.options.nextQuestionDelay, time_source_units_seconds, function() {
             __nextQuestion();
             __resetTimer();
-            with(oQuizButton) { 
-                isPressed = false;
-                image_index = 0;
-            }
+            global.answersActive = false;
         });
+    }
+    
+    static _answerButtonReset = function() {
+        with (oQuizButton) {
+            isPressed = false;
+            image_index = 0;
+        }
     }
     #endregion
     
