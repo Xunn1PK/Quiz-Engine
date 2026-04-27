@@ -11,7 +11,6 @@ scribble_font_force_bilinear_filtering("fMain", false);
 #region Quiz
 global.data = json_load("Data/data.json");
 global.layout = json_load("Data/Layouts/default.json");
-global.object = [];
 global.question = 0;
 global.creationCode = [function(){return 0}];
 global.timer = 0;

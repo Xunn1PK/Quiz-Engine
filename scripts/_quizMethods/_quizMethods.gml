@@ -10,7 +10,6 @@ function _quizMethods() constructor {
         } else {
             Transition.Goto(rMainMenu, function() {
                 global.question = 0;
-                array_delete(global.object, 0, array_length(global.object));
             });
         }
     }
@@ -57,7 +56,6 @@ function _quizMethods() constructor {
         if (obj.creation_code != -1) {
             __executeCreationCode(inst, obj.creation_code);
         }
-        array_push(global.object, obj);
     }
     #endregion
     
@@ -73,6 +71,8 @@ function _quizMethods() constructor {
             __layoutCreateObject(i);
         }
         __resetTimer();
+        
+        audio_play_sound(Music.quiz.Main, 1, true);
     }
     
     static _answerButtonPress = function() {
