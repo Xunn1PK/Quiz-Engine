@@ -28,7 +28,7 @@ function _quizButtonMethods() constructor {
         
         //Code that should be executed only on 1st tick
         if (!isHover){
-            audio_play_sound(sndMouseHover, 0, false);
+            audio_play_sound(Sounds.quiz.MouseHover, 0, false);
             
             //Do NOT touch this!
             __setStates(false, true, false);
@@ -40,7 +40,7 @@ function _quizButtonMethods() constructor {
         
         //Code that should be executed only on 1st tick
         if (!isHold){
-            audio_play_sound(sndMouseClick, 0, false);
+            audio_play_sound(Sounds.quiz.MouseClick, 0, false);
             
             //Do NOT touch this!
             __setStates(false, false, true);
@@ -48,7 +48,7 @@ function _quizButtonMethods() constructor {
     }
     onMouseReleased = function() {
         //Code to execute
-        var snd = inst.correct ? sndCorrect : sndWrong;
+        var snd = inst.correct ? Sounds.quiz.CorrectAnswer : Sounds.quiz.WrongAnswer;
         audio_play_sound(snd, 0, false);
         
         //Danger zone (do NOT touch this!)

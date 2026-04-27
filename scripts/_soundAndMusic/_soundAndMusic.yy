@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"json",
+  "%Name":"_soundAndMusic",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"json",
+  "name":"_soundAndMusic",
   "parent":{
-    "name":"Common Tools",
-    "path":"folders/Common/Scripts/Common Tools.yy",
+    "name":"Scripts",
+    "path":"folders/Common/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

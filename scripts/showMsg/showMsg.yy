@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"showMsg",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Common/Scripts.yy",
+    "name":"Common Tools",
+    "path":"folders/Common/Scripts/Common Tools.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

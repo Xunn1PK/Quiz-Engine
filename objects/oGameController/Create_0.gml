@@ -1,30 +1,24 @@
 #region Common
-global._transition = new _transition();
 global.version_num = "v0.1.1";
 global.version_name = "Beta 1 Patch 1";
 
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
-
-#macro Transition global._transition
 #endregion
 
 
 
 #region Quiz
-global._quizMethods = new _quizMethods();
 global.data = json_load("Data/data.json");
 global.layout = json_load("Data/Layouts/default.json");
 global.question = 0;
 global.creationCode = [function(){return 0}];
 global.timer = 0;
 global.options = {
-    "nextQuestionDelay": 3,
-    "transitionFadeInLength": 0.25,
-    "transitionFadeOutLength": 0.25
+    nextQuestionDelay: 3,
+    transitionFadeInLength: 0.25,
+    transitionFadeOutLength: 0.25
 }
-
-#macro Quiz global._quizMethods
 #endregion
 
 
@@ -34,11 +28,4 @@ scribble_font_force_bilinear_filtering("fEditor", false);
 #endregion
 
 
-
-#region ENUMs
-enum TRANSITION_STATES {
-    DISABLED,
-    FADE_IN,
-    FADE_OUT
-}
-#endregion
+__transition = new _transition();
