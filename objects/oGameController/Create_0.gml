@@ -1,7 +1,7 @@
 #region Common
 global._transition = new _transition();
-global.version_num = "v0.1.0";
-global.version_name = "Beta 1";
+global.version_num = "v0.1.1";
+global.version_name = "Beta 1 Patch 1";
 
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
