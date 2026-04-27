@@ -48,10 +48,8 @@ function _transition() constructor {
         //Get the previous color and alpha
         var prevColor = draw_get_color();
         var prevAlpha = draw_get_alpha();
-        var prevDepth = __inst.depth;
         
         //Set depth, color and alpha
-        __inst.depth = -15998; //For some reason minimal depth is -15998, instead of -16000
         draw_set_color(c_black);
         draw_set_alpha(__alpha);
         
@@ -61,7 +59,6 @@ function _transition() constructor {
         //Set alpha and color back to normal
         draw_set_color(prevColor);
         draw_set_alpha(prevAlpha);
-        __inst.depth = prevDepth;
     }
     #endregion
     
