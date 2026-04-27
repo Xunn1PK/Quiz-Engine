@@ -18,10 +18,9 @@ Currently avaible only on Windows and Android (i don't have any other devices, s
 5. If required, select build type (zip/installer)
 
 ## Credits
-Xunn1PK (or X1pk) - Developer
-
-Juju Adams - ScribbleDX developer
-Manta ray - gooey developer
+- Xunn1PK (or X1pk) - Developer
+- Juju Adams - ScribbleDX developer
+- Manta ray - gooey developer
 
 Project is licensed under MIT license
 
