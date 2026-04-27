@@ -6,3 +6,9 @@ function _sound() constructor {
         WrongAnswer: sndWrong
     }
 }
+
+function _music() constructor {
+    quiz = {
+        Main: musQuiz
+    }
+}

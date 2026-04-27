@@ -10,6 +10,7 @@ function _quizMethods() constructor {
         } else {
             Transition.Goto(rMainMenu, function() {
                 global.question = 0;
+                audio_stop_sound(Music.quiz.Main);
             });
         }
     }
