@@ -11,7 +11,7 @@
   "option_windows_description_info":"Quiz framework made in GameMaker",
   "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":true,
-  "option_windows_display_name":"Quiz Engine",
+  "option_windows_display_name":"Quiz Engine BETA",
   "option_windows_enable_steam":false,
   "option_windows_executable_name":"${project_name}.exe",
   "option_windows_icon":"${base_options_dir}/windows/icons/icon.ico",
