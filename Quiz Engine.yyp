@@ -258,6 +258,7 @@
     {"id":{"name":"TGMX_9_Settings","path":"scripts/TGMX_9_Settings/TGMX_9_Settings.yy",},},
     {"id":{"name":"TGMX_Experimental","path":"scripts/TGMX_Experimental/TGMX_Experimental.yy",},},
     {"id":{"name":"TGMX_System","path":"scripts/TGMX_System/TGMX_System.yy",},},
+    {"id":{"name":"wrapValue","path":"scripts/wrapValue/wrapValue.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_4dir","path":"shaders/__shd_scribble_bake_effect_4dir/__shd_scribble_bake_effect_4dir.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_8dir_2px","path":"shaders/__shd_scribble_bake_effect_8dir_2px/__shd_scribble_bake_effect_8dir_2px.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_8dir","path":"shaders/__shd_scribble_bake_effect_8dir/__shd_scribble_bake_effect_8dir.yy",},},
