@@ -91,7 +91,6 @@
     {"id":{"name":"oPlate","path":"objects/oPlate/oPlate.yy",},},
     {"id":{"name":"oQuizButton","path":"objects/oQuizButton/oQuizButton.yy",},},
     {"id":{"name":"oQuizUI","path":"objects/oQuizUI/oQuizUI.yy",},},
-    {"id":{"name":"oResultsController","path":"objects/oResultsController/oResultsController.yy",},},
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"UI","path":"objects/UI/UI.yy",},},
     {"id":{"name":"rLoad","path":"rooms/rLoad/rLoad.yy",},},
