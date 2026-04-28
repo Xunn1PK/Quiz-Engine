@@ -21,6 +21,7 @@ Currently avaible only on Windows and Android (i don't have any other devices, s
 - Xunn1PK (or X1pk) - Developer
 - Juju Adams - ScribbleDX developer
 - Manta ray - gooey developer
+- Laura Shigihara - Graze the Roof (Main quiz music in `Beta 2 (v0.2)`+)
 
 Project is licensed under MIT license
 
