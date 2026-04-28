@@ -1,6 +1,6 @@
 #region Common
-global.version_num = "v0.1.1";
-global.version_name = "Beta 1 Patch 1";
+global.version_num = "v0.2";
+global.version_name = "Beta 2 \"BREAK\"";
 
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
