@@ -10,7 +10,10 @@ scribble_font_force_bilinear_filtering("fMain", false);
 
 #region Quiz
 global.data = json_load("Data/data.json");
-global.layout = json_load("Data/Layouts/default.json");
+global.layout = {
+    quiz: json_load("Data/Layouts/default-quiz.json"),
+    results: json_load("Data/Layouts/default-results.json")
+}
 global.question = 0;
 global.creationCode = [function(){return 0}];
 global.timer = 0;

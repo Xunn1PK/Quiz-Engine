@@ -63,7 +63,8 @@
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"data.json","CopyToMask":-1,"filePath":"datafiles/Data","name":"data.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"default.json","CopyToMask":-1,"filePath":"datafiles/Data/Layouts","name":"default.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"default-quiz.json","CopyToMask":-1,"filePath":"datafiles/Data/Layouts","name":"default-quiz.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"default-results.json","CopyToMask":-1,"filePath":"datafiles/Data/Layouts","name":"default-results.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"LICENSE","CopyToMask":-1,"filePath":"datafiles/LICENSES","name":"LICENSE","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"LICENSE-gooey","CopyToMask":-1,"filePath":"datafiles/LICENSES","name":"LICENSE-gooey","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"LICENSE-ScribbleDX","CopyToMask":-1,"filePath":"datafiles/LICENSES","name":"LICENSE-ScribbleDX","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
