@@ -1,4 +1,35 @@
 {
+    "TopBar": {
+        "anchor": 0,
+        "x": 0,
+        "y": 0,
+        "x_size": "@@infinity$$",
+        "y_size": 64,
+        "button_left": {
+            "anchor": 0,
+            "x": 0,
+            "y": 0,
+            "x_size": 64,
+            "y_size": 64,
+            "blend": [255, 255, 255]
+        },
+        "button_right": {
+            "anchor": 2,
+            "x": 0,
+            "y": 0,
+            "x_size": 64,
+            "y_size": 64,
+            "blend": [255, 255, 255]
+        },
+        "question_num": {
+            "anchor": 1,
+            "x": 0,
+            "y": 32,
+            "x_scale": 1,
+            "y_scale": 1,
+            "color": "#FFFFFF"
+        }
+    },
     "Question": {
         "anchor": 4,
         "x": 0,
