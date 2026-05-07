@@ -6,6 +6,7 @@ If you wish to add new constant, do it here
 #region Macros
 #macro      Quiz            new _quizMethods()
 #macro      Transition      oGameController.__transition
+#macro      Results         new _resultsMethods()
 #macro      Sounds          new _sound()
 #macro      Music           new _music()
 
