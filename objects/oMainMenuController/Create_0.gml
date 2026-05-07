@@ -35,12 +35,11 @@ button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
 panel.add(button);
 
 //Options button
-button = new UIButton("main-menu-button-options", -256, 128, 182, 64, "[#000000]Options", sButton);
+button = new UIButton("main-menu-button-options", -256, 128, 182, 64, "[#000000]Results", sButton);
 button.setImageMouseover(1).setImageClick(2);
 button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
-    //It'll be implemented later, when I'll do the options menu
-    //room_goto(rOptions);
-    //ui_get("main-menu").setVisible(false); 
+    room_goto(rResults);
+    ui_get("main-menu").destroy(); 
 });
 panel.add(button);
 

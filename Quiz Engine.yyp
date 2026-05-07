@@ -59,6 +59,7 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Quiz/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Results","folderPath":"folders/Results.yy","name":"Results","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Results/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Results/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
@@ -92,6 +93,7 @@
     {"id":{"name":"oPlate","path":"objects/oPlate/oPlate.yy",},},
     {"id":{"name":"oQuizButton","path":"objects/oQuizButton/oQuizButton.yy",},},
     {"id":{"name":"oQuizUI","path":"objects/oQuizUI/oQuizUI.yy",},},
+    {"id":{"name":"oResultsUI","path":"objects/oResultsUI/oResultsUI.yy",},},
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"UI","path":"objects/UI/UI.yy",},},
     {"id":{"name":"rLoad","path":"rooms/rLoad/rLoad.yy",},},

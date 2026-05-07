@@ -3,7 +3,7 @@
         "anchor": 0,
         "x": 0,
         "y": 0,
-        "x_size": "@@infinity$$",
+        "x_size": 30000,
         "y_size": 64,
         "button_left": {
             "anchor": 0,
