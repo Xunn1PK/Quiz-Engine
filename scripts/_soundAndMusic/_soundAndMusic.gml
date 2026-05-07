@@ -8,7 +8,5 @@ function _sound() constructor {
 }
 
 function _music() constructor {
-    quiz = {
-        Main: musQuiz
-    }
+    quiz = musQuiz;
 }

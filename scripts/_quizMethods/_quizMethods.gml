@@ -10,7 +10,7 @@ function _quizMethods() constructor {
         } else {
             Transition.Goto(rMainMenu, function() {
                 global.question = 0;
-                audio_stop_sound(Music.quiz.Main);
+                audio_stop_sound(Music.quiz);
             });
         }
     }
@@ -73,7 +73,7 @@ function _quizMethods() constructor {
         }
         __resetTimer();
         
-        audio_play_sound(Music.quiz.Main, 1, true);
+        audio_play_sound(Music.quiz, 1, true);
     }
     
     static _answerButtonPress = function() {
