@@ -52,7 +52,7 @@ function _quizButtonMethods() constructor {
         audio_play_sound(snd, 0, false);
         array_push(global.playerAnswers, inst.ButtonID);
         
-        //Danger zone (do NOT touch this!)
+        //Do NOT touch this!
         Quiz._answerButtonPress();
         __setStates(false, false, false);
     }

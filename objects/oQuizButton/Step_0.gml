@@ -1,3 +1,6 @@
+str = methods.getStr(ButtonID);
+correct = methods.isCorrect(ButtonID);
+
 if (!isPressed && global.answersActive) {
     if (mouse(mb_left, MOUSE.RELEASE)) {
         methods.onMouseReleased();
