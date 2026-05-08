@@ -26,7 +26,7 @@ topBar.add(button);
 //Right button
 var BRight = TopBar.button_right;
 blend = make_color_rgb(BRight.blend[0], BRight.blend[1], BRight.blend[2]);
-button = new UIButton("results-left", BRight.x, BRight.y, BRight.x_size, BRight.y_size, "[c_black][scale, 0.6][sArrow, 1]", sButton, BRight.anchor);
+button = new UIButton("results-right", BRight.x, BRight.y, BRight.x_size, BRight.y_size, "[c_black][scale, 0.6][sArrow, 1]", sButton, BRight.anchor);
 button.setImageMouseover(1).setImageClick(2).setCallback(UI_EVENT.LEFT_RELEASE, function() {
     currentQuestion++;
     currentQuestion = wrapValue(currentQuestion, 0, array_length(global.playerAnswers) - 1);
