@@ -1,5 +1,4 @@
 currentQuestion = 0;
-questionNumStr = "";
 layout = global.layout.results;
 TopBar = global.layout.results.TopBar;
 
@@ -37,7 +36,6 @@ topBar.add(button);
 
 //Question number text
 qNum = TopBar.question_num;
-text = new UIText("results-question-num", qNum.x, qNum.y, $"[{qNum.color}][x_scale, {qNum.x_scale}][y_scale, {qNum.y_scale}]Question: {currentQuestion + 1}", qNum.anchor);
-text.setTextMouseover("hello :)");
+text = new UIText("results-question-num", qNum.x, qNum.y, $"[{qNum.color}][scale, {qNum.scale}]Question: {currentQuestion + 1}", qNum.anchor);
 topBar.add(text);
 #endregion

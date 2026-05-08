@@ -25,8 +25,7 @@
             "anchor": 1,
             "x": 0,
             "y": 32,
-            "x_scale": 1,
-            "y_scale": 1,
+            "scale": 1,
             "color": "#FFFFFF"
         }
     },
