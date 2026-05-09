@@ -4,18 +4,22 @@ TopBar = global.layout.results.TopBar;
 
 #region Methods
 updateQuestion = function(val) {
-    //Increase/decrease question
+    //Increase/decrease question counter
     currentQuestion += val;
     currentQuestion = wrapValue(currentQuestion, 0, array_length(global.playerAnswers) - 1);
     
-    //Change question number text
+    //Update question number text
     ui_get("results-question-num").setText($"[{qNum.color}][scale, {qNum.scale}]Question {currentQuestion + 1}");
     
-    //Change player answer text and color
-    var pb = other.layout.PlayerAnswer;
+    //Update player answer text and color
+    var pb = layout.PlayerAnswer;
     var col = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? pb.text_color.correct : pb.text_color.incorrect;
     var blend = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? pb.blend.correct : pb.blend.incorrect;
     ui_get("results-player-answer").setText($"[{col}]{getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str}").setImageBlend(make_color_rgb(blend[0], blend[1], blend[2]));
+    
+    //Update question text
+    var qt = layout.Question;
+    ui_get("results-question-text").setText($"[{qt.color}][scale, {qt.scale}]{global.data[currentQuestion].Question}");
 }
 getAnswer = function(question, answer) {
     return global.data[question].Answer[answer];
@@ -77,8 +81,14 @@ var blend = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestio
 button = new UIButton("results-player-answer", pb.x, pb.y, sprite_get_width(sButton) * pb.xscale, sprite_get_height(sButton) * pb.yscale, $"[{col}]{getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str}", sButton, pb.anchor);
 button.setImageBlend(make_color_rgb(blend[0], blend[1], blend[2]));
 
-text = new UIText("results-player-answer-label", pb.label.xoffset, pb.label.yoffset, $"[{pb.label.color}]Your answer:");
+text = new UIText("results-player-answer-label", pb.label.xoffset, pb.label.yoffset, $"[{pb.label.color}][scale, {pb.label.scale}]Your answer:");
 
 button.add(text);
 panel.add(button);
+
+
+//Question text
+var qt = layout.Question;
+text = new UIText("results-question-text", qt.x, qt.y, $"[{qt.color}][scale, {qt.scale}]{global.data[currentQuestion].Question}", qt.anchor);
+panel.add(text);
 #endregion

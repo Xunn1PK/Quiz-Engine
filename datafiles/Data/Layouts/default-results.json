@@ -32,7 +32,9 @@
     "Question": {
         "anchor": 4,
         "x": 0,
-        "y": -200
+        "y": -200,
+        "scale": 1,
+        "color": "#FFFFFF"
     },
     "PlayerAnswer": {
         "anchor": 4,
@@ -43,7 +45,8 @@
         "label": {
             "anchor": 4,
             "xoffset": 0,
-            "yoffset": -128,
+            "yoffset": -96,
+            "scale": 1,
             "color": "#FFFFFF"
         },
         "text_color": {
