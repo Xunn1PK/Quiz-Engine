@@ -32,14 +32,14 @@
     "Question": {
         "anchor": 4,
         "x": 0,
-        "y": -200,
+        "y": -150,
         "scale": 1,
         "color": "#FFFFFF"
     },
     "PlayerAnswer": {
         "anchor": 4,
         "x": -400,
-        "y": 200,
+        "y": 100,
         "xscale": 4.75,
         "yscale": 1.75,
         "label": {
@@ -57,5 +57,21 @@
             "correct": [0, 255, 0],
             "incorrect": [255, 0, 0]
         }
+    },
+    "CorrectAnswer": {
+        "anchor": 4,
+        "x": 400,
+        "y": 100,
+        "xscale": 4.75,
+        "yscale": 1.75,
+        "label": {
+            "anchor": 4,
+            "xoffset": 0,
+            "yoffset": -96,
+            "scale": 1,
+            "color": "#FFFFFF"
+        },
+        "text_color": "#FFFFFF",
+        "blend": [0, 255, 0]
     }
 }
