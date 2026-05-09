@@ -80,6 +80,7 @@ function _quizMethods() constructor {
         with (oQuizButton) {
             isPressed = true;
             image_index = correct ? 3 : 4;
+            image_blend = c_white;
         }
         call_later(global.options.nextQuestionDelay, time_source_units_seconds, function() {
             __nextQuestion();
