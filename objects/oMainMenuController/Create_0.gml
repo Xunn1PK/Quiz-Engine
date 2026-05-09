@@ -35,12 +35,16 @@ button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
 panel.add(button);
 
 //Options button
-button = new UIButton("main-menu-button-options", -256, 128, 182, 64, "[#000000]Results", sButton);
-button.setImageMouseover(1).setImageClick(2);
+button = new UIButton("main-menu-button-results", -256, 128, 182, 64, "[#000000]Results", sButton);
+button.setImageMouseover(1).setImageClick(2).setImageDisabled(2);
 button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
-    room_goto(rResults);
-    ui_get("main-menu").destroy(); 
+    Transition.Goto(rResults, function() {
+        ui_get("main-menu").destroy(); 
+    });
 });
+if (array_length(global.playerAnswers) <= 0) {
+    button.setEnabled(false);
+}
 panel.add(button);
 
 //Exit button
