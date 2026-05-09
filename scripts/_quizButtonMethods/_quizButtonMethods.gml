@@ -54,6 +54,7 @@ function _quizButtonMethods() constructor {
         
         //Do NOT touch this!
         Quiz._answerButtonPress();
+        inst.image_blend = c_white;
         __setStates(false, false, false);
     }
     
