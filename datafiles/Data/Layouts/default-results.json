@@ -37,6 +37,22 @@
     "PlayerAnswer": {
         "anchor": 4,
         "x": -400,
-        "y": 200
+        "y": 200,
+        "xscale": 4.75,
+        "yscale": 1.75,
+        "label": {
+            "anchor": 4,
+            "xoffset": 0,
+            "yoffset": -128,
+            "color": "#FFFFFF"
+        },
+        "text_color": {
+            "correct": "#FFFFFF",
+            "incorrect": "#FFFFFF"
+        },
+        "blend": {
+            "correct": [0, 255, 0],
+            "incorrect": [255, 0, 0]
+        }
     }
 }
