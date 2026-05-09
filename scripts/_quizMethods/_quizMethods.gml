@@ -5,12 +5,12 @@ function _quizMethods() constructor {
             global.question++;
             global.answersActive = false; 
             
-            var q = global.layout.Question
+            var q = global.layout.quiz.Question
             oQuizUI.moveQuestion(q.start_x, q.start_y, q.move_time, EASING[q.easing]);
         } else {
             Transition.Goto(rMainMenu, function() {
                 global.question = 0;
-                audio_stop_sound(Music.quiz.Main);
+                audio_stop_sound(Music.quiz);
             });
         }
     }
@@ -35,7 +35,7 @@ function _quizMethods() constructor {
     }
     
     static __layoutCreateAnswer = function(id) {
-        var answer = global.layout.Answer;
+        var answer = global.layout.quiz.Answer;
         instance_create_depth(answer.pos[id].x, answer.pos[id].y, 0, oQuizButton, {
             "image_xscale": answer.xscale,
             "image_yscale": answer.yscale,
@@ -45,7 +45,7 @@ function _quizMethods() constructor {
     }
     
     static __layoutCreateObject = function(id) {
-        var obj = global.layout.Object[id];
+        var obj = global.layout.quiz.Object[id];
         var inst = instance_create_depth(obj.x, obj.y, obj.depth, asset_get_index(obj.object), {
             "image_xscale": obj.xscale,
             "image_yscale": obj.yscale,
@@ -65,15 +65,15 @@ function _quizMethods() constructor {
     
     #region System
     static _init = function() {
-        for (var i = 0; i < global.layout.Answer.count; i++) {
+        for (var i = 0; i < global.layout.quiz.Answer.count; i++) {
             __layoutCreateAnswer(i);
         }
-        for (var i = 0; i < array_length(global.layout.Object); i++) {
+        for (var i = 0; i < array_length(global.layout.quiz.Object); i++) {
             __layoutCreateObject(i);
         }
         __resetTimer();
         
-        audio_play_sound(Music.quiz.Main, 1, true);
+        audio_play_sound(Music.quiz, 1, true);
     }
     
     static _answerButtonPress = function() {

@@ -1,0 +1,77 @@
+{
+    "TopBar": {
+        "anchor": 0,
+        "x": 0,
+        "y": 0,
+        "x_size": 30000,
+        "y_size": 64,
+        "arrow_left": {
+            "anchor": 3,
+            "x": 16,
+            "y": 0,
+            "width": 16,
+            "height": 32,
+            "blend": [255, 255, 255]
+        },
+        "arrow_right": {
+            "anchor": 5,
+            "x": -16,
+            "y": 0,
+            "width": 16,
+            "height": 32,
+            "blend": [255, 255, 255]
+        },
+        "question_num": {
+            "anchor": 1,
+            "x": 0,
+            "y": 32,
+            "scale": 1,
+            "color": "#FFFFFF"
+        }
+    },
+    "Question": {
+        "anchor": 4,
+        "x": 0,
+        "y": -150,
+        "scale": 1,
+        "color": "#FFFFFF"
+    },
+    "PlayerAnswer": {
+        "anchor": 4,
+        "x": -400,
+        "y": 100,
+        "xscale": 4.75,
+        "yscale": 1.75,
+        "label": {
+            "anchor": 4,
+            "xoffset": 0,
+            "yoffset": -96,
+            "scale": 1,
+            "color": "#FFFFFF"
+        },
+        "text_color": {
+            "correct": "#FFFFFF",
+            "incorrect": "#FFFFFF"
+        },
+        "blend": {
+            "correct": [0, 255, 0],
+            "incorrect": [255, 0, 0]
+        }
+    },
+    "CorrectAnswer": {
+        "anchor": 4,
+        "x": 400,
+        "y": 100,
+        "xscale": 4.75,
+        "yscale": 1.75,
+        "label": {
+            "anchor": 4,
+            "xoffset": 0,
+            "yoffset": -96,
+            "scale": 1,
+            "color": "#FFFFFF"
+        },
+        "text_color": "#FFFFFF",
+        "blend": [0, 255, 0]
+    }
+}

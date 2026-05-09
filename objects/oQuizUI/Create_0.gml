@@ -1,4 +1,4 @@
-layout = global.layout.Question;
+layout = global.layout.quiz.Question;
 
 qX = layout.x;
 qY = layout.y;
