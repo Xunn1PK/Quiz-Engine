@@ -8,7 +8,7 @@ updateQuestion = function(val) {
     ui_get("results-question-num").setText($"[{qNum.color}][scale, {qNum.scale}]Question: {currentQuestion + 1}");
 }
 
-var button, text, blend;
+var button, sprite, text;
 
 panel = new UIPanel("results", 0, 0, display_get_gui_width(), display_get_gui_height(), undefined).setResizable(false).setMovable(false);
 
@@ -17,27 +17,20 @@ var tbxsize = real(TopBar.x_size) < display_get_gui_width() ? TopBar.x_size : di
 var tbysize = real(TopBar.y_size) < display_get_gui_height() ? TopBar.y_size : display_get_gui_height();
 topBar = new UIPanel("results-top-bar", TopBar.x, TopBar.y, tbxsize, tbysize, sPanel, TopBar.anchor).setResizable(false).setMovable(false);
 
-//Left button
-var BLeft = TopBar.button_left;
-blend = make_color_rgb(BLeft.blend[0], BLeft.blend[1], BLeft.blend[2]);
-button = new UIButton("results-left", BLeft.x, BLeft.y, BLeft.x_size, BLeft.y_size, "[c_black][scale, 0.6][sArrow, 0]", sButton, BLeft.anchor);
-button.setImageBlend(blend);
-button.setImageMouseover(1).setImageClick(2).setCallback(UI_EVENT.LEFT_RELEASE, function() {
-    updateQuestion(-1);
-});
-topBar.add(button);
+//Arrow left
+var ALeft = TopBar.arrow_left;
+sprite = new UISprite("results-arrow-left", ALeft.x, ALeft.y, sArrow, ALeft.width, ALeft.height, 0, ALeft.anchor);
+sprite.setImageBlend(make_color_rgb(ALeft.blend[0], ALeft.blend[1], ALeft.blend[2]));
+topBar.add(sprite);
 
-//Right button
-var BRight = TopBar.button_right;
-blend = make_color_rgb(BRight.blend[0], BRight.blend[1], BRight.blend[2]);
-button = new UIButton("results-right", BRight.x, BRight.y, BRight.x_size, BRight.y_size, "[c_black][scale, 0.6][sArrow, 1]", sButton, BRight.anchor);
-button.setImageMouseover(1).setImageClick(2).setCallback(UI_EVENT.LEFT_RELEASE, function() {
-    updateQuestion(1);
-});
-topBar.add(button);
+//Arrow right
+var ARight = TopBar.arrow_right;
+sprite = new UISprite("results-arrow-right", ARight.x, ARight.y, sArrow, ARight.width, ARight.height, 1, ARight.anchor);
+sprite.setImageBlend(make_color_rgb(ARight.blend[0], ARight.blend[1], ARight.blend[2]));
+topBar.add(sprite);
 
 //Question number text
 qNum = TopBar.question_num;
-text = new UIText("results-question-num", qNum.x, qNum.y, $"[{qNum.color}][scale, {qNum.scale}]Question: {currentQuestion + 1}", qNum.anchor);
+text = new UIText("results-question-num", qNum.x, qNum.y, $"[{qNum.color}][scale, {qNum.scale}]Question {currentQuestion + 1}", qNum.anchor);
 topBar.add(text);
 #endregion
