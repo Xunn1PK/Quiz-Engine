@@ -19,8 +19,8 @@ updateQuestion = function(val) {
     
     //Update player answer text and color
     var playerAnsw = layout.PlayerAnswer;
-    var color = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
-    var blend = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
+    var color = global.playerAnswers[currentQuestion] != -1 && isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
+    var blend = global.playerAnswers[currentQuestion] != -1 && isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
     var str = global.playerAnswers[currentQuestion] != -1 ? getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str : "-";
     button = ui_get("results-player-answer");
     text = ui_get("results-player-answer-text");
@@ -90,8 +90,8 @@ topBar.add(text);
 #region Results
 //Player answer
 var playerAnsw = layout.PlayerAnswer;
-var color = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
-var blend = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
+var color = global.playerAnswers[currentQuestion] != -1 && isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
+var blend = global.playerAnswers[currentQuestion] != -1 && isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
 var str = global.playerAnswers[currentQuestion] != -1 ? getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str : "-";
 
 button = new UIButton("results-player-answer", playerAnsw.x, playerAnsw.y, sprite_get_width(sButton) * playerAnsw.xscale, sprite_get_height(sButton) * playerAnsw.yscale, "", sButton, playerAnsw.anchor);
