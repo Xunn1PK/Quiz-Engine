@@ -1,7 +1,10 @@
-if (!Quiz.getButtonsPressed() && active){
-    if (global.timer > 0){
+if (!Quiz.getButtonsPressed() && active) {
+    if (global.timer > 0) {
         global.timer -= 1 / game_get_speed(gamespeed_fps);
-    } else if (global.timer == 0){
+    } else if (global.timer == 0) {
+        if (!Quiz.getButtonsPressed()) {
+            array_push(global.playerAnswers, -1);
+        }
         Quiz._answerButtonPress();
     } 
 }

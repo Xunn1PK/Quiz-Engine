@@ -5,7 +5,7 @@ TopBar = global.layout.results.TopBar;
 
 #region Methods
 updateQuestion = function(val) {
-    var button;
+    var button, text;
     
     //Increase/decrease question counter
     currentQuestion += val;
@@ -19,19 +19,18 @@ updateQuestion = function(val) {
     
     //Update player answer text and color
     var playerAnsw = layout.PlayerAnswer;
-    var color = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
-    var blend = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
+    var color = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
+    var blend = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
+    var str = global.playerAnswers[currentQuestion] != -1 ? getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str : "-";
     button = ui_get("results-player-answer");
-    button.setText($"[{color}]{getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str}").setImageBlend(make_color_rgb(blend[0], blend[1], blend[2]));
-    button.setTextMouseover(button.getText());
-    button.setTextClick(button.getText());
+    text = ui_get("results-player-answer-text");
+    text.setText($"[{color}]{str}", true);
+    button.setImageBlend(make_color_rgb(blend[0], blend[1], blend[2]));
     
     //Update correct answer text
     var correctAnswStr = getAnswer(currentQuestion, getCorrectAnswers(currentQuestion)[currentCorrectAnsw]).str;
-    button = ui_get("results-correct-answer");
-    button.setText($"[{layout.CorrectAnswer.text_color}]{correctAnswStr}");
-    button.setTextMouseover(button.getText());
-    button.setTextClick(button.getText());
+    text = ui_get("results-correct-answer-text");
+    text.setText($"[{layout.CorrectAnswer.text_color}]{correctAnswStr}", true);
     
     //Update question text
     var questionTxt = layout.Question;
@@ -91,11 +90,16 @@ topBar.add(text);
 #region Results
 //Player answer
 var playerAnsw = layout.PlayerAnswer;
-var color = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
-var blend = isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
+var color = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.text_color.correct : playerAnsw.text_color.incorrect;
+var blend = global.playerAnswers[currentQuestion] != -1 || isAnswerCorrect(currentQuestion, global.playerAnswers[currentQuestion]) ? playerAnsw.blend.correct : playerAnsw.blend.incorrect;
+var str = global.playerAnswers[currentQuestion] != -1 ? getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str : "-";
 
-button = new UIButton("results-player-answer", playerAnsw.x, playerAnsw.y, sprite_get_width(sButton) * playerAnsw.xscale, sprite_get_height(sButton) * playerAnsw.yscale, $"[{color}]{getAnswer(currentQuestion, global.playerAnswers[currentQuestion]).str}", sButton, playerAnsw.anchor);
+button = new UIButton("results-player-answer", playerAnsw.x, playerAnsw.y, sprite_get_width(sButton) * playerAnsw.xscale, sprite_get_height(sButton) * playerAnsw.yscale, "", sButton, playerAnsw.anchor);
 button.setImageBlend(make_color_rgb(blend[0], blend[1], blend[2])).setInteractable(false);
+
+text = new UIText("results-player-answer-text", 0, 0, $"[{color}]{str}");
+text.setMaxWidth(sprite_get_width(sButton) * playerAnsw.xscale - 24);
+button.add(text);
 
 text = new UIText("results-player-answer-label", playerAnsw.label.xoffset, playerAnsw.label.yoffset, $"[{playerAnsw.label.color}][scale, {playerAnsw.label.scale}]Your answer");
 
@@ -105,17 +109,20 @@ panel.add(button);
 //Correct answer
 var correctAnsw = layout.CorrectAnswer;
 var correctAnswStr = getAnswer(currentQuestion, getCorrectAnswers(currentQuestion)[currentCorrectAnsw]).str;
-button = new UIButton("results-correct-answer", correctAnsw.x, correctAnsw.y, sprite_get_width(sButton) * correctAnsw.xscale, sprite_get_height(sButton) * correctAnsw.yscale, $"[{correctAnsw.text_color}]{correctAnswStr}", sButton, correctAnsw.anchor);
+button = new UIButton("results-correct-answer", correctAnsw.x, correctAnsw.y, sprite_get_width(sButton) * correctAnsw.xscale, sprite_get_height(sButton) * correctAnsw.yscale, "", sButton, correctAnsw.anchor);
 button.setImageBlend(make_color_rgb(correctAnsw.blend[0], correctAnsw.blend[1], correctAnsw.blend[2]));
+
+text = new UIText("results-correct-answer-text", 0, 0, $"[{layout.CorrectAnswer.text_color}]{correctAnswStr}";
+text.setMaxWidth(sprite_get_width(sButton) * correctAnsw.xscale - 24);
+button.add(text);
+
 button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
     currentCorrectAnsw++;
     currentCorrectAnsw = wrapValue(currentCorrectAnsw, 0, array_length(getCorrectAnswers(currentQuestion)) - 1);
     
     var correctAnswStr = getAnswer(currentQuestion, getCorrectAnswers(currentQuestion)[currentCorrectAnsw]).str;
-    var button = ui_get("results-correct-answer");
-    button.setText($"[{layout.CorrectAnswer.text_color}]{correctAnswStr}");
-    button.setTextMouseover(button.getText());
-    button.setTextClick(button.getText());
+    var text = ui_get("results-correct-answer-text");
+    text.setText($"[{layout.CorrectAnswer.text_color}]{correctAnswStr}", true);
 });
 
 text = new UIText("results-player-answer-label", correctAnsw.label.xoffset, correctAnsw.label.yoffset, $"[{correctAnsw.label.color}][scale, {correctAnsw.label.scale}]Correct answer");
