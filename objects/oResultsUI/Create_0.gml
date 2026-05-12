@@ -112,7 +112,7 @@ var correctAnswStr = getAnswer(currentQuestion, getCorrectAnswers(currentQuestio
 button = new UIButton("results-correct-answer", correctAnsw.x, correctAnsw.y, sprite_get_width(sButton) * correctAnsw.xscale, sprite_get_height(sButton) * correctAnsw.yscale, "", sButton, correctAnsw.anchor);
 button.setImageBlend(make_color_rgb(correctAnsw.blend[0], correctAnsw.blend[1], correctAnsw.blend[2]));
 
-text = new UIText("results-correct-answer-text", 0, 0, $"[{layout.CorrectAnswer.text_color}]{correctAnswStr}";
+text = new UIText("results-correct-answer-text", 0, 0, $"[{layout.CorrectAnswer.text_color}]{correctAnswStr}");
 text.setMaxWidth(sprite_get_width(sButton) * correctAnsw.xscale - 24);
 button.add(text);
 
