@@ -1,6 +1,6 @@
 #region Common
-global.version_num = "v0.3";
-global.version_name = "Beta 3";
+global.version_num = "v0.3.1";
+global.version_name = "Beta 3 (Patch 1)";
 
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
