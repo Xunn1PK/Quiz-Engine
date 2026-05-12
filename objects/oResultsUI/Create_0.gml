@@ -15,7 +15,7 @@ updateQuestion = function(val) {
     currentCorrectAnsw = 0;
     
     //Update question number text
-    ui_get("results-question-num").setText($"[{qNum.color}][scale, {qNum.scale}]Question {currentQuestion + 1}");
+    ui_get("results-question-num").setText($"[{qNum.color}][scale, {qNum.scale}]Question {currentQuestion + 1}", true);
     
     //Update player answer text and color
     var playerAnsw = layout.PlayerAnswer;
