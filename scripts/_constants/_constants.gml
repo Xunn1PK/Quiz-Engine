@@ -10,8 +10,8 @@ If you wish to add new constant, do it here
 #macro      Music           new _music()
 
 
-#macro      VERSION_NUM     "v0.3.1"
-#macro      VERSION_NAME    "Beta 3 (Patch 1)"
+#macro      VERSION_NUM     "v0.4-rc.1"
+#macro      VERSION_NAME    "Beta 4 (Pre-release 1)"
 #macro      TID             global.localization[$ "TID"]
 
 
