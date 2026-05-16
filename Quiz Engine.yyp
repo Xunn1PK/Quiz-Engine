@@ -277,6 +277,7 @@
     {"id":{"name":"gooey","path":"sprites/gooey/gooey.yy",},},
     {"id":{"name":"sArrow","path":"sprites/sArrow/sArrow.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
+    {"id":{"name":"sCountryFlag","path":"sprites/sCountryFlag/sCountryFlag.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"sEditorButton","path":"sprites/sEditorButton/sEditorButton.yy",},},
     {"id":{"name":"sEditorPanel","path":"sprites/sEditorPanel/sEditorPanel.yy",},},
