@@ -1,0 +1,22 @@
+{
+    "name": "English (US)",
+    "flagSprite": "sCountryFlag",
+    "flagImageIndex": 0,
+    "baseLocalizationFile": -1,
+    "TID": {
+        "MainMenu": {
+            "startButton": "Start",
+            "resultsButton": "Results",
+            "optionsButton": "Options",
+            "exitButton": "Exit",
+            "confirmExit": "Are you sure want to eixt?",
+            "confirmPlayAgainTitle": "Are you sure want to play again?",
+            "confirmPlayAgainWarning": "This will overwrite your current results!",
+            "yes": "Yes",
+            "no": "No"
+        },
+        "Results": {
+            "questionNum": "Question #"
+        }
+    }
+}
