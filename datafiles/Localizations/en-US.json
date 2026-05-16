@@ -16,7 +16,9 @@
             "no": "No"
         },
         "Results": {
-            "questionNum": "Question #"
+            "questionNum": "Question #",
+            "playerAnswer": "Your answer",
+            "correctAnswer": "Correct Answer"
         }
     }
 }
