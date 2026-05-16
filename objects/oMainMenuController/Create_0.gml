@@ -29,6 +29,7 @@ button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
         modal.add(button);
         
         var text = new UIText("main-menu-play-again-text", 0, 32, "[fa_top]Are you sure want to play again?\n\n[scale, 0.8][#FF0000]This will overwrite your current results!", UI_RELATIVE_TO.TOP_CENTER);
+        text.setMaxWidth(580);
         modal.add(text);
     }
 });
