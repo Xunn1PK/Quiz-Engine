@@ -1,4 +1,6 @@
 #region Common
+global.localization = json_load("Localizations/en-US.json");
+
 scribble_font_set_default("fMain");
 scribble_font_force_bilinear_filtering("fMain", false);
 #endregion
@@ -12,7 +14,7 @@ global.layout = {
     results: json_load("Data/Layouts/default-results.json")
 }
 global.question = 0;
-global.creationCode = [function(){return 0}];
+global.creationCode = [];
 global.timer = 0;
 global.answersActive = false;
 global.playerAnswers = [];

@@ -3,6 +3,8 @@ currentCorrectAnsw = 0;
 layout = global.layout.results;
 TopBar = global.layout.results.TopBar;
 
+tid = TID.Results;
+
 #region Methods
 updateQuestion = function(val) {
     var button, text;
@@ -15,7 +17,7 @@ updateQuestion = function(val) {
     currentCorrectAnsw = 0;
     
     //Update question number text
-    ui_get("results-question-num").setText($"[{qNum.color}][scale, {qNum.scale}]Question {currentQuestion + 1}", true);
+    ui_get("results-question-num").setText($"[{qNum.color}][scale, {qNum.scale}]{tid.questionNum}{currentQuestion + 1}", true);
     
     //Update player answer text and color
     var playerAnsw = layout.PlayerAnswer;
@@ -82,7 +84,7 @@ topBar.add(sprite);
 
 //Question number text
 qNum = TopBar.question_num;
-text = new UIText("results-question-num", qNum.x, qNum.y, $"[{qNum.color}][scale, {qNum.scale}]Question {currentQuestion + 1}", qNum.anchor);
+text = new UIText("results-question-num", qNum.x, qNum.y, $"[{qNum.color}][scale, {qNum.scale}]{tid.questionNum}{currentQuestion + 1}", qNum.anchor);
 topBar.add(text);
 #endregion
 
@@ -101,7 +103,7 @@ text = new UIText("results-player-answer-text", 0, 0, $"[{color}]{str}");
 text.setMaxWidth(sprite_get_width(sButton) * playerAnsw.xscale - 24);
 button.add(text);
 
-text = new UIText("results-player-answer-label", playerAnsw.label.xoffset, playerAnsw.label.yoffset, $"[{playerAnsw.label.color}][scale, {playerAnsw.label.scale}]Your answer");
+text = new UIText("results-player-answer-label", playerAnsw.label.xoffset, playerAnsw.label.yoffset, $"[{playerAnsw.label.color}][scale, {playerAnsw.label.scale}]{tid.playerAnswer}");
 
 button.add(text);
 panel.add(button);
@@ -125,7 +127,7 @@ button.setCallback(UI_EVENT.LEFT_RELEASE, function() {
     text.setText($"[{layout.CorrectAnswer.text_color}]{correctAnswStr}", true);
 });
 
-text = new UIText("results-player-answer-label", correctAnsw.label.xoffset, correctAnsw.label.yoffset, $"[{correctAnsw.label.color}][scale, {correctAnsw.label.scale}]Correct answer");
+text = new UIText("results-player-answer-label", correctAnsw.label.xoffset, correctAnsw.label.yoffset, $"[{correctAnsw.label.color}][scale, {correctAnsw.label.scale}]{tid.correctAnswer}");
 
 button.add(text);
 panel.add(button);
