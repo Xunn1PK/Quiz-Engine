@@ -4,11 +4,16 @@ If you wish to add new constant, do it here
 */
 
 #region Macros
+//Classes (yes, it's the way i realized classes in GML)
 #macro      Quiz            new _quizMethods()
 #macro      Transition      oGameController.__transition
 #macro      Results         new _resultsMethods()
 #macro      Sounds          new _sound()
 #macro      Music           new _music()
+
+//Constant values
+#macro      VERSION_NUM     "v0.3.1"
+#macro      VERSION_NAME    "Beta 3 (Patch 1)"
 
 #macro      EASING          [EaseInSine, EaseOutSine, EaseInOutSine, EaseInQuad, EaseOutQuad, EaseInOutQuad, EaseInCubic, EaseOutCubic, EaseInOutCubic, EaseInQuart, EaseOutQuart, EaseInOutQuart, EaseInQuint, EaseOutQuint, EaseInOutQuint, EaseInExpo, EaseOutExpo, EaseInOutExpo, EaseInCirc, EaseOutCirc, EaseInOutCirc, EaseInBack, EaseOutBack, EaseInOutBack, EaseInBackSoft, EaseOutBackSoft, EaseInOutBackSoft, EaseInBackSofter, EaseOutBackSofter, EaseInOutBackSofter, EaseInElastic, EaseOutElastic, EaseInOutElastic, EaseInBounce, EaseOutBounce, EaseInOutBounce]
 #endregion
